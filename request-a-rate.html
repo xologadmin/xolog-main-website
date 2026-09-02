@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Freight Rate | XOLOG</title>
+  <meta name="description" content="Request an air, sea, road, project cargo or warehousing quote from XOLOG's freight forwarding team in Beirut.">
+  <link rel="canonical" href="https://www.xolog.com/request-a-rate.html">
+  <link rel="icon" href="./images/favicon.png">
+  <link rel="stylesheet" href="./css/site.css">
+  <script src="./js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="header-bar"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">XO</span><span class="brand-meta"><strong>XOLOG</strong><span>Exceptional Operations Logistics</span></span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-navigation">Menu</button><nav id="site-navigation" class="site-nav" data-site-nav aria-label="Primary navigation"><ul class="site-nav-list"><li><a class="site-nav-link" href="./">Home</a></li><li><a class="site-nav-link" href="./company/about-us/">About</a></li><li><a class="site-nav-link" href="./services.html">Services</a></li><li><a class="site-nav-link" href="./global-coverage.html">Coverage</a></li><li><a class="site-nav-link" href="./tracking.html">Tracking</a></li><li><a class="site-nav-link" href="./resources.html">Resources</a></li><li><a class="site-nav-link" href="./contact.html">Contact</a></li></ul></nav></div></header>
+  <main id="main-content">
+    <section class="page-hero"><div class="section-inner"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="./">Home</a> / <span aria-current="page">Request a rate</span></nav><span class="eyebrow">Freight quotation</span><h1>Request a tailored freight rate</h1><p>Share the shipment details below. Complete information helps our team recommend an accurate route and price.</p></div></section>
+    <section class="section"><div class="section-inner split-layout">
+      <div>
+        <form class="content-card quote-form" data-form-type="quote" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="quote-name">Full name *</label><input id="quote-name" name="name" autocomplete="name" data-required aria-describedby="quote-name-error"><span id="quote-name-error" class="error-text" data-error-for="name" aria-live="polite"></span></div>
+            <div class="field"><label for="quote-company">Company *</label><input id="quote-company" name="company" autocomplete="organization" data-required aria-describedby="quote-company-error"><span id="quote-company-error" class="error-text" data-error-for="company" aria-live="polite"></span></div>
+            <div class="field"><label for="quote-email">Business email *</label><input id="quote-email" name="email" type="email" autocomplete="email" data-required aria-describedby="quote-email-error"><span id="quote-email-error" class="error-text" data-error-for="email" aria-live="polite"></span></div>
+            <div class="field"><label for="quote-phone">Phone *</label><input id="quote-phone" name="phone" type="tel" autocomplete="tel" data-required aria-describedby="quote-phone-error"><span id="quote-phone-error" class="error-text" data-error-for="phone" aria-live="polite"></span></div>
+            <div class="field"><label for="quote-service">Service *</label><select id="quote-service" name="service" data-required aria-describedby="quote-service-error"><option value="">Choose a service</option><option>Air freight</option><option>Sea freight</option><option>Road freight</option><option>Project transport</option><option>Warehousing</option><option>Value-added services</option></select><span id="quote-service-error" class="error-text" data-error-for="service" aria-live="polite"></span></div>
+            <div class="field"><label for="quote-incoterm">Incoterm</label><input id="quote-incoterm" name="incoterm" placeholder="For example, EXW or FOB"></div>
+            <div class="field"><label for="quote-origin">Origin *</label><input id="quote-origin" name="origin" autocomplete="address-level2" data-required aria-describedby="quote-origin-error"><span id="quote-origin-error" class="error-text" data-error-for="origin" aria-live="polite"></span></div>
+            <div class="field"><label for="quote-destination">Destination *</label><input id="quote-destination" name="destination" autocomplete="address-level2" data-required aria-describedby="quote-destination-error"><span id="quote-destination-error" class="error-text" data-error-for="destination" aria-live="polite"></span></div>
+            <div class="field"><label for="quote-weight">Gross weight</label><input id="quote-weight" name="gross-weight" placeholder="For example, 850 kg"></div>
+            <div class="field"><label for="quote-ready">Cargo ready date</label><input id="quote-ready" name="cargo-ready-date" type="date"></div>
+          </div>
+          <div class="field"><label for="quote-cargo">Cargo details *</label><textarea id="quote-cargo" name="cargo-details" rows="5" data-required aria-describedby="quote-cargo-hint quote-cargo-error"></textarea><span id="quote-cargo-hint" class="hint">Include commodity, package count, dimensions and any special handling needs.</span><span id="quote-cargo-error" class="error-text" data-error-for="cargo-details" aria-live="polite"></span></div>
+          <label><input type="checkbox" name="consent" value="Agreed" data-required aria-describedby="quote-consent-error"> I agree that XOLOG may use these details to respond to this quotation request. *</label>
+          <span id="quote-consent-error" class="error-text" data-error-for="consent" aria-live="polite"></span>
+          <button class="button" type="submit">Prepare rate request</button>
+        </form>
+        <div class="form-message" data-form-message role="status"></div>
+        <p><a class="button-secondary" data-mailto-link hidden>Send request to XOLOG</a></p>
+      </div>
+      <aside class="content-card"><span class="eyebrow">Before you submit</span><h2>Details that improve quote accuracy</h2><ul class="check-list"><li>Package count and dimensions</li><li>Total gross and chargeable weight</li><li>Commodity and HS code, if known</li><li>Pickup and delivery requirements</li><li>Hazardous or temperature-control needs</li><li>Required departure or arrival date</li></ul><p><a href="./resources.html#quote-guide">Review the complete quote checklist</a></p></aside>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div class="footer-grid"><div><h2>XOLOG SAL</h2><p>Freight forwarding from Beirut to the world.</p></div><div><h3>Services</h3><ul class="footer-nav"><li><a href="./services/logistics/air-freight/">Air freight</a></li><li><a href="./services/logistics/sea-freight/">Sea freight</a></li><li><a href="./services/warehousing/">Warehousing</a></li></ul></div><div><h3>Support</h3><ul class="footer-nav"><li><a href="./tracking.html">Shipment tracking</a></li><li><a href="./resources.html">Freight resources</a></li><li><a href="./contact.html">Contact</a></li></ul></div><div><h3>Direct contact</h3><p><a href="tel:+9611574333">+961 1 574333</a><br><a href="mailto:info@xolog.com">info@xolog.com</a></p></div></div><div class="footer-bottom"><span>&copy; 2026 XOLOG SAL</span><a href="./">Return home</a></div></div></footer>
+</body>
+</html>
