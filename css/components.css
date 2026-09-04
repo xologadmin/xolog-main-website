@@ -1,0 +1,264 @@
+.xolog-site-header,
+.xolog-site-footer {
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.xolog-site-header *,
+.xolog-site-footer * {
+  box-sizing: border-box;
+}
+
+.xolog-site-header {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #d8e0eb;
+  box-shadow: 0 4px 18px rgba(15, 23, 38, 0.06);
+}
+
+.xolog-nav-shell,
+.xolog-footer-shell {
+  width: min(calc(100% - 32px), 1212px);
+  margin: 0 auto;
+}
+
+.xolog-nav-shell {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.xolog-logo {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.xolog-logo img {
+  display: block;
+  width: auto;
+  height: 58px;
+}
+
+.xolog-nav-toggle {
+  display: none;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 14px;
+  color: #162033;
+  background: #fff;
+  border: 1px solid #aab6c7;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.xolog-main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.xolog-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.xolog-nav-item {
+  position: relative;
+}
+
+.xolog-nav-link {
+  display: block;
+  padding: 12px 11px;
+  color: #162033 !important;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.xolog-nav-link:hover,
+.xolog-nav-link:focus-visible,
+.xolog-nav-link[aria-current="page"] {
+  color: #005dbe !important;
+  background: #e8f3ff;
+}
+
+.xolog-nav-link.xolog-nav-cta {
+  color: #fff !important;
+  background: #162033;
+}
+
+.xolog-nav-link.xolog-nav-cta:hover,
+.xolog-nav-link.xolog-nav-cta:focus-visible,
+.xolog-nav-link.xolog-nav-cta[aria-current="page"] {
+  background: #005dbe;
+}
+
+.xolog-submenu {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  display: none;
+  min-width: 230px;
+  padding: 8px !important;
+  background: #fff;
+  border: 1px solid #d8e0eb;
+  border-radius: 10px;
+  box-shadow: 0 14px 34px rgba(15, 23, 38, 0.14);
+}
+
+.xolog-nav-item:hover > .xolog-submenu,
+.xolog-nav-item:focus-within > .xolog-submenu {
+  display: block;
+}
+
+.xolog-submenu .xolog-nav-link {
+  text-transform: none;
+}
+
+#footer-wrapper {
+  background: #fff !important;
+}
+
+#footer-widget-bar {
+  display: none !important;
+}
+
+.xolog-site-footer {
+  width: 100%;
+  padding: 48px 0 24px;
+  color: #162033 !important;
+  background: #fff;
+  border-top: 1px solid #d8e0eb;
+}
+
+.xolog-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: 32px;
+}
+
+.xolog-footer-brand img {
+  width: auto;
+  height: 52px;
+  margin-bottom: 16px;
+}
+
+.xolog-site-footer h2 {
+  margin: 0 0 14px;
+  color: #162033 !important;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.xolog-site-footer p,
+.xolog-site-footer address {
+  margin: 0;
+  color: #3d4b63 !important;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.xolog-site-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.xolog-site-footer li + li {
+  margin-top: 9px;
+}
+
+.xolog-site-footer a {
+  color: #005dbe !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.xolog-site-footer a:hover,
+.xolog-site-footer a:focus-visible {
+  color: #003f82 !important;
+}
+
+.xolog-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 20px;
+  color: #3d4b63 !important;
+  border-top: 1px solid #d8e0eb;
+}
+
+@media (max-width: 1050px) {
+  .xolog-nav-shell {
+    min-height: 76px;
+    flex-wrap: wrap;
+    padding: 9px 0;
+  }
+
+  .xolog-logo img {
+    height: 48px;
+  }
+
+  .xolog-nav-toggle {
+    display: inline-block;
+  }
+
+  .xolog-main-nav {
+    display: none;
+    flex-basis: 100%;
+    padding: 8px 0 12px;
+  }
+
+  .xolog-main-nav.is-open {
+    display: block;
+  }
+
+  .xolog-nav-list {
+    display: block;
+  }
+
+  .xolog-nav-link {
+    padding: 12px;
+  }
+
+  .xolog-submenu {
+    position: static;
+    display: block;
+    min-width: 0;
+    margin-left: 18px !important;
+    padding: 0 0 4px !important;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .xolog-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .xolog-footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .xolog-footer-bottom {
+    display: block;
+  }
+
+  .xolog-footer-bottom span {
+    display: block;
+    margin-top: 8px;
+  }
+}
